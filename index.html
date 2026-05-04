@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Note It - Capture your thoughts instantly with a clean, minimal, and fully responsive note-taking app. Add, edit, delete and save notes with ease.">
+  <meta name="keywords" content="notes, note taking, productivity, edit notes, delete notes">
+  <meta name="author" content="Note It App">
+  <title>Note It | Capture Your Thoughts Instantly</title>
+  <link rel="stylesheet" href="style.css"></link>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav-container">
+    <div class="logo">Note It</div>
+    <div class="nav-links">
+      <button class="nav-link" data-nav="home">Home</button>
+      <button class="nav-link" data-nav="notes">All Notes</button>
+      <button class="nav-link" data-nav="about">About Us</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="home-section">
+    <div class="hero">
+      <h1>Capture Your Thoughts Instantly</h1>
+      <p>Organize ideas, tasks, and memories with a beautiful and simple note-taking experience. Zero clutter, maximum focus.</p>
+      <button class="btn-primary" id="heroAddNoteBtn">Add Note</button>
+    </div>
+  </section>
+  <section id="notes-section">
+    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Your Notes</h2>
+    <div class="notes-form">
+      <div class="form-group">
+        <label for="noteTitle">Note Title</label>
+        <input type="text" id="noteTitle" placeholder="e.g., Project idea, Shopping list..." maxlength="80">
+      </div>
+      <div class="form-group">
+        <label for="noteDesc">Description</label>
+        <textarea id="noteDesc" placeholder="Write something amazing..." maxlength="500"></textarea>
+      </div>
+      <div class="form-buttons">
+        <button class="btn-secondary" id="addNoteBtn">Add Note</button>
+        <button class="btn-cancel" id="cancelEditBtn" style="display: none;">Cancel Edit</button>
+        <span id="formFeedback" style="font-size: 0.85rem; color: #4b5563;"></span>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Search notes by title..." autocomplete="off">
+    </div>
+    <div id="notesContainer" class="notes-grid">
+      <div class="empty-state">No Notes yet — create your first note above!</div>
+    </div>
+  </section>
+  <section id="about-section" class="about-us-section">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-subtitle">
+      Meet the people behind Note It. The creative minds turning big ideas into your favorite daily tool.
+    </p>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="images/abhisheksir.png" alt="Team Member 1" class="team-avatar">
+        <h3 class="team-name">Dr. Abhishek (Professor)</h3>
+        <div class="team-role">Guidance / Support</div>
+        <p class="team-bio">Experienced academic mentor providing guidance, technical insights, and continuous support for Note It.</p>
+        <p class="linkdin"><a href="https://www.linkedin.com/in/dr-abhishek-thakur-00123321/" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="team-card">
+        <img src="images/rohan.png" alt="Team Member 2" class="team-avatar">
+        <h3 class="team-name">Rohan Chaudhary</h3>
+        <div class="team-role">Frontend Developer</div>
+        <p class="team-bio">Frontend student developer passionate about building clean, responsive, and user-friendly interfaces.</p>
+        <p class="linkdin"><a href="https://www.linkedin.com/in/rohan-chaudhary-71871437b/" target="_blank">LinkedIn</a></p>
+      </div>
+      <div class="team-card">
+        <img src="images/rohit.png" alt="Team Member 3" class="team-avatar">
+        <h3 class="team-name">Rohit Kumar Bansal</h3>
+        <div class="team-role">Frontend Developer</div>
+        <p class="team-bio">Frontend student developer dedicated to creating intuitive designs and improving user interaction.</p>
+        <p class="linkdin"><a href="https://www.linkedin.com/in/rohit-kumar-bansal-59697738a/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-social">
+      <a href="https://facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="social-icon instagram" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://github.com" target="_blank" class="social-icon github" aria-label="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </div>
+    <div class="footer-links">
+      <span style="color:#6f655d; font-weight:600;">GitHub Link 1:</span>
+      <a href="https://github.com/your-demo-link-1" target="_blank" class="footergithublink">
+        https://github.com/your-demo-link-1
+      </a>
+    </div>
+    <div class="footer-links">
+      <span style="color:#6f655d; font-weight:600;">GitHub Link 2:</span>
+      <a href="https://github.com/your-demo-link-2" target="_blank" class="footergithublink">
+        https://github.com/your-demo-link-2
+      </a>
+    </div>
+    <p style="color: #6f655d;">© 2026 Note It — clear mind, clear notes. All rights reserved.</p>
+  </div>
+</footer>
+<script src="java.js"></script>
+</body>
+</html>
